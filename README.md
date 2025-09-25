@@ -43,6 +43,24 @@ image-caption-generator-vgg16-lstm/
 └── model.png                    # Model architecture visualization
 ```
 
+## Download Required Files
+
+Due to file size limitations on GitHub, the following trained model files and preprocessed data are hosted on Google Drive:
+
+### Required Files:
+- **`features.pkl`** - Pre-extracted VGG16 features from Flickr8K images
+- **`best_model.h5`** - Trained LSTM model weights 
+- **`all_captions.pkl`** - Preprocessed caption data
+
+**Download all files:** [Google Drive Folder](https://drive.google.com/drive/folders/1InJJcQ2uYsUG93qQKWA69C1xBLrP3QPC?usp=sharing)
+
+### Setup Instructions:
+1. Download all three files from the Google Drive folder above
+2. Place them in the root directory of your cloned repository
+3. Ensure the file names match exactly as shown in the project structure
+
+*Note: These files are essential for running the inference notebook. The training notebook can generate these files if you prefer to train from scratch.*
+
 ## Installation
 
 1. **Clone the repository**
@@ -166,9 +184,6 @@ The model is trained on the **Flickr8K dataset** which contains:
 - tqdm
 - NLTK
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
